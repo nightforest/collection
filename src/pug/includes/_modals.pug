@@ -1,0 +1,120 @@
+.modal-wrap
+    #modal-success.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="23" height="22")
+                        use(xlink:href="img/sprite.svg#close-modal")
+
+                .modal__content
+                    svg.modal__icon(width="114" height="114")
+                        use(xlink:href="img/sprite.svg#success")
+                    h3.modal__title Форма відправлена
+                    p.modal__descr Наш менеджер зв’яжется с вами
+                    a.button.modal__button(href="#") На головну
+
+    #modal-login.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="23" height="22")
+                        use(xlink:href="img/sprite.svg#close-modal")
+
+                form.form(id="login-form" autocomplete="off" novalidate="novalidate")
+                    h3.section-title.form__title Вхід до кабінету
+
+                    .form__group
+                        input#inputLoginPhone.input.form__input.phone-mask(type="text" name="inputLoginPhone" placeholder="Номер телефона *" autocomplete="off" required)
+                
+                    .form__group
+                        input#inputLoginPassword.input.form__input(type="password" name="inputLoginPassword" placeholder="Пароль *" autocomplete="off" required)
+
+                    .form__group.form__group--sb
+                        .checkbox
+                            input.checkbox__input#checkboxKeep(type="checkbox" name="checkboxKeep" value="true")
+                            label.checkbox__label(for="checkboxKeep") Бути у системі
+
+                        a.form__link.blue-link(href="#") Забули пароль?
+
+                    .form__group
+                        picture.form__recaptcha
+                            img.form__recaptcha-img(src="img/recaptcha.webp" srcset="img/recaptcha@2x.webp 2x" loading="lazy" width="295" height="77" alt="alt")
+
+                    .form__group.form__group--center
+                        button.button.form__button.form__button--middle Увійти
+
+                    .form__info Ще не маєте акаунту? 
+                        a.blue-link(href="#" data-modal="login-modal") Зареєструватися
+
+    #modal-code.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="23" height="22")
+                        use(xlink:href="img/sprite.svg#close-modal")
+
+                form.form(id="code-form" autocomplete="off" novalidate="novalidate")
+                    h3.section-title.form__title Введіть код
+
+                    .form__group
+                        .form__info.form__info--big Код підтвердження надіслан вам на телефон
+
+                    .form__group
+                        .form__code
+                            .form__code-item
+                                input#inputCode1.input.form__input(type="text" name="inputCode1" maxlength="1" autocomplete="off" required)
+
+                            .form__code-item
+                                input#inputCode2.input.form__input(type="text" name="inputCode2" maxlength="1" autocomplete="off" required)
+
+                            .form__code-item
+                                input#inputCode3.input.form__input(type="text" name="inputCode3" maxlength="1" autocomplete="off" required)
+
+                            .form__code-item
+                                input#inputCode4.input.form__input(type="text" name="inputCode4" maxlength="1" autocomplete="off" required)
+
+                    .form__group
+                        .form__info Не отримали код? 
+                            a.blue-link(href="#" data-modal="login-modal") Відправити ще раз
+
+                    .form__button-group
+                        button.button.form__button.form__button--middle Відправити
+
+    #modal-review.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="23" height="22")
+                        use(xlink:href="img/sprite.svg#close-modal")
+
+                .review-card.modal__review-card
+                    .review-card__header
+                        h3.review-card__name Іван Іванов
+                        time.review-card__date 21.11.2023
+
+                    .rating.review-card__rating(data-rating="4")
+                        .rating__item
+                        .rating__item
+                        .rating__item
+                        .rating__item
+                        .rating__item
+                    
+                    .review-card__body
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+                        p Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?
+    
+    #modal-video.modal.modal--video
+        .modal__inner
+            .modal__window
+                button.modal__close.modal__close--outside(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="23" height="22")
+                        use(xlink:href="img/sprite.svg#close-modal")
+                
+                .modal__video
+                    iframe(id="youtube-video" width="960" height="540" src="https://www.youtube.com/embed/CIpOxa5hxOw?showinfo=0" frameborder="0" allowfullscreen)

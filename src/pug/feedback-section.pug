@@ -1,0 +1,29 @@
+section.feedback-section
+    .container.feedback-section__container
+        h2.section-title.feedback-section__title Опитування
+
+        .feedback-section__text
+            p Побажання нам для покращення проекту.
+            p Ви можете заповнити форму нижче і ми врахуємо ці побажання у майбутньому.
+
+        form.form.feedback-section__form(id="feedback-form" autocomplete="off" novalidate="novalidate")
+            .form__row
+                .form__col
+                    input#inputName.input.form__input(type="text" name="inputName" placeholder="Ім’я *" autocomplete="off" required)
+                
+                .form__col
+                    input#inputEmail.input.form__input(type="email" name="inputEmail" placeholder="Email *" autocomplete="off" required)
+
+            .form__group
+                textarea#textareaFeedback.textarea.form__input(name="textareaFeedback" rows="8" placeholder="Побажання *" autocomplete="off" required)
+
+            .form__group.form__group--center
+                .checkbox
+                    input.checkbox__input#checkboxAgree(type="checkbox" name="checkbox" value="true" required)
+                    label.checkbox__label(for="checkboxAgree") Погоджуюсь з 
+                        a.blue-link(href="#") Політикою конфіденційності
+                        |  та 
+                        a.blue-link(href="#") Офертою
+
+            .form__button-group
+                button.button.form__button Надіслати

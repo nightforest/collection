@@ -1,0 +1,41 @@
+header.header
+    .container.header__container
+        .logo.header__logo
+            a.logo__link(href="#" aria-label="logo")
+                svg.logo__img(width="46" height="38")
+                    use(xlink:href="img/sprite.svg#logo")
+                
+                span.logo__title Збірник
+
+        nav.menu.header__menu
+            ul.menu__list
+                li.menu__item
+                    a.menu__link.is-active(href="#") Тарифи
+                
+                li.menu__item
+                    a.menu__link(href="#") Блог
+                
+                li.menu__item
+                    a.menu__link(href="#") FAQ
+                
+                li.menu__item
+                    a.menu__link(href="#") Контакти
+
+        ul.actions
+            li.actions__item.actions__item--hidden-md
+                a.button.actions__button(href="#") Зареєструватися
+            
+            li.actions__item.actions__item--hidden-md
+                a.button.button--outline.actions__button(href="#" data-modal="modal-login") Вхід
+            
+            li.actions__item.actions__item--visible-md
+                a.button.button--outline.actions__button(href="#")
+                    svg.button__icon(width="17" height="19")
+                        use(xlink:href="img/sprite.svg#user")
+                    span Мій профіль
+
+            li.actions__item.actions__item--visible-md
+                button.burger.header__burger(type="button" aria-label="Open mobile menu" aria-expanded="false" data-nav-toggle)
+                    .burger__line
+                    .burger__line
+                    .burger__line

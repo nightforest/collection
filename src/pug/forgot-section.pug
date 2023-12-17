@@ -1,0 +1,19 @@
+section.login-section
+    .container.login-section__container
+        .login-section__inner
+            form.form.login-section__form(id="forgot-form" autocomplete="off" novalidate="novalidate")
+                h1.section-title.form__title Забули пароль?
+
+                .form__group
+                    input#inputForgotPhone.input.form__input.phone-mask(type="text" name="inputForgotPhone" placeholder="Номер телефона *" autocomplete="off" required)
+
+                .form__group
+                    .form__info.form__info--small Забули свій пароль? Без проблем. Просто укажіть нам свій номер телефону, і ми надішлемо вам код підтверждення для скидання пароля, за яким ви зможете вибрати новий.
+
+                .form__group
+                    picture.form__recaptcha
+                        img.form__recaptcha-img(src="img/recaptcha.webp" srcset="img/recaptcha@2x.webp 2x" loading="lazy" width="295" height="77" alt="alt")
+
+                .form__button-group.form__button-group--sb
+                    button.button.button--bordered.form__button(type-button) Скасувати
+                    button.button.form__button Підтвердити

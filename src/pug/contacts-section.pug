@@ -1,0 +1,41 @@
+section.contacts-section
+    .container.contacts-section__container
+        header.contacts-section__header
+            h1.page-title Контакти
+
+            nav.breadcrumbs(aria-label="breadcrumb")
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Головна
+                    li.breadcrumbs__item(aria-current="page") Контакти
+
+        .email.contacts-section__email
+            h3.email__title
+                svg.email__icon(width="26" height="20")
+                    use(xlink:href="img/sprite.svg#email")
+                | E-mail:
+            
+            a.email__link(href="mailto:zbirnyk@gmail.com") zbirnyk@gmail.com
+
+
+        form.form.contacts-section__form(id="feedback-form" autocomplete="off" novalidate="novalidate")
+            .form__row
+                .form__col
+                    input#inputName.input.form__input(type="text" name="inputName" placeholder="Ім’я *" autocomplete="off" required)
+                
+                .form__col
+                    input#inputEmail.input.form__input(type="email" name="inputEmail" placeholder="Email *" autocomplete="off" required)
+
+            .form__group
+                textarea#textareaFeedback.textarea.form__input(name="textareaFeedback" rows="8" placeholder="Побажання *" autocomplete="off" required)
+
+            .form__group.form__group--center
+                .checkbox
+                    input.checkbox__input#checkboxAgree(type="checkbox" name="checkbox" value="true" required)
+                    label.checkbox__label(for="checkboxAgree") Погоджуюсь з 
+                        a.blue-link(href="#") Політикою конфіденційності
+                        |  та 
+                        a.blue-link(href="#") Офертою
+
+            .form__button-group
+                button.button.form__button Надіслати

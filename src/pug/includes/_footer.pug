@@ -1,0 +1,49 @@
+footer.footer
+    .container.footer__container
+        .footer__col.footer__col--3
+            .logo.footer__logo
+                a.logo__link(href="#" aria-label="logo")
+                    svg.logo__img(width="46" height="38")
+                        use(xlink:href="img/sprite.svg#logo")
+                    
+                    span.logo__title Збірник
+
+            ul.payment.footer__payment
+                li.payment__item
+                    svg.payment__icon(width="25" height="8")
+                        use(xlink:href="img/sprite.svg#visa")
+                    
+                li.payment__item
+                    svg.payment__icon(width="23" height="14")
+                        use(xlink:href="img/sprite.svg#mastercard")
+                
+                li.payment__item
+                    svg.payment__icon(width="30" height="7")
+                        use(xlink:href="img/sprite.svg#liqpay")
+        
+        .footer__col.footer__col--5
+            nav.footer-menu
+                ul.footer-menu__list
+                    li.footer-menu__item
+                        a.footer-menu__link(href="#") Тарифи
+                    li.footer-menu__item
+                        a.footer-menu__link(href="#") Блог
+                    li.footer-menu__item
+                        a.footer-menu__link(href="#") FAQ
+                    li.footer-menu__item
+                        a.footer-menu__link(href="#") Контакти
+                    li.footer-menu__item
+                        a.footer-menu__link(href="#") Політика конфіденційності
+                    li.footer-menu__item
+                        a.footer-menu__link(href="#") Оферта
+
+        .footer__col.footer__col--4
+            .footer__info
+                .footer__copyright 2023 &copy; Всі права захищено
+                .footer__dev Розроблено
+                    a.footer__dev-link(href="https://shafem.com/" target="_blank")
+                        img.footer__dev-img(src="img/shafem.svg" width="95" height="20" alt="Shafem logo")
+            
+            a.button.button--outline.up-button(href="#main" data-scroll)
+                svg.up-button__icon(width="20" height="10")
+                    use(xlink:href="img/sprite.svg#arrow-top")

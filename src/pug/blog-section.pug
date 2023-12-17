@@ -1,0 +1,152 @@
+section.blog-section
+    .container.blog-section__container
+        header.blog-section__header
+            h1.page-title Блог
+
+            nav.breadcrumbs(aria-label="breadcrumb")
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Головна
+                    li.breadcrumbs__item(aria-current="page") Блог
+
+        nav.blog-tags.blog-section__tags
+            ul.blog-tags__list
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button.is-active(href="#") Усі
+                
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button(href="#") Хештег 1
+
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button(href="#") Хештег 2
+                
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button(href="#") Хештег 3
+                
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button(href="#") Хештег 4
+                
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button(href="#") Хештег 5
+                
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button(href="#") Хештег 6
+                
+                li.blog-tags__item
+                    a.button.button--outline.blog-tags__button(href="#") Хештег 7
+
+        ul.blog-section__list
+            li.blog-section__item
+                .blog-card
+                    picture.blog-card__picture
+                        img.blog-card__img(src="img/blog-img.webp" srcset="img/blog-img@2x.webp 2x" loading="lazy" width="350" height="196"  alt="alt")
+
+                    .blog-card__body
+                        h3.blog-card__title
+                            a.blog-card__link(href="#") Як користуватись нашим сервісом?
+                        
+                        .blog-card__bottom
+                            time.blog-card__date 21.11.2023
+
+                            ul.blog-card__tags
+                                li.blog-card__tags-item
+                                    a.blog-card__tags-link(href="#") #назва тегу
+
+            li.blog-section__item
+                .blog-card
+                    picture.blog-card__picture
+                        img.blog-card__img(src="img/blog-img.webp" srcset="img/blog-img@2x.webp 2x" loading="lazy" width="350" height="196"  alt="alt")
+
+                    .blog-card__body
+                        h3.blog-card__title
+                            a.blog-card__link(href="#") Як користуватись нашим нашим нашим сервісом?
+                        
+                        .blog-card__bottom
+                            time.blog-card__date 21.11.2023
+
+                            ul.blog-card__tags
+                                li.blog-card__tags-item
+                                    a.blog-card__tags-link(href="#") #назва тегу
+
+            li.blog-section__item
+                .blog-card
+                    picture.blog-card__picture
+                        img.blog-card__img(src="img/blog-img.webp" srcset="img/blog-img@2x.webp 2x" loading="lazy" width="350" height="196"  alt="alt")
+
+                    .blog-card__body
+                        h3.blog-card__title
+                            a.blog-card__link(href="#") Як користуватись нашим сервісом?
+                        
+                        .blog-card__bottom
+                            time.blog-card__date 21.11.2023
+
+                            ul.blog-card__tags
+                                li.blog-card__tags-item
+                                    a.blog-card__tags-link(href="#") #назва тегу
+                                    
+            li.blog-section__item
+                .blog-card
+                    picture.blog-card__picture
+                        img.blog-card__img(src="img/blog-img.webp" srcset="img/blog-img@2x.webp 2x" loading="lazy" width="350" height="196"  alt="alt")
+
+                    .blog-card__body
+                        h3.blog-card__title
+                            a.blog-card__link(href="#") Як користуватись нашим сервісом?
+                        
+                        .blog-card__bottom
+                            time.blog-card__date 21.11.2023
+
+                            ul.blog-card__tags
+                                li.blog-card__tags-item
+                                    a.blog-card__tags-link(href="#") #назва тегу
+
+            li.blog-section__item
+                .blog-card
+                    picture.blog-card__picture
+                        img.blog-card__img(src="img/blog-img.webp" srcset="img/blog-img@2x.webp 2x" loading="lazy" width="350" height="196"  alt="alt")
+
+                    .blog-card__body
+                        h3.blog-card__title
+                            a.blog-card__link(href="#") Як користуватись нашим нашим нашим сервісом?
+                        
+                        .blog-card__bottom
+                            time.blog-card__date 21.11.2023
+
+                            ul.blog-card__tags
+                                li.blog-card__tags-item
+                                    a.blog-card__tags-link(href="#") #назва тегу
+
+            li.blog-section__item
+                .blog-card
+                    picture.blog-card__picture
+                        img.blog-card__img(src="img/blog-img.webp" srcset="img/blog-img@2x.webp 2x" loading="lazy" width="350" height="196"  alt="alt")
+
+                    .blog-card__body
+                        h3.blog-card__title
+                            a.blog-card__link(href="#") Як користуватись нашим сервісом?
+                        
+                        .blog-card__bottom
+                            time.blog-card__date 21.11.2023
+
+                            ul.blog-card__tags
+                                li.blog-card__tags-item
+                                    a.blog-card__tags-link(href="#") #назва тегу
+
+        nav.pagenav.blog-section__pagenav(aria-label="Page navigation")
+            ul.pagenav__list
+                li.pagenav__item
+                    a.pagenav__arrow(href="#" aria-label="Previous")
+                        svg.pagenav__icon(width="7" height="14")
+                            use(xlink:href="img/sprite.svg#arrow-left")
+                li.pagenav__item.is-active(aria-current="page")
+                    a.pagenav__link(href="#") 1
+                li.pagenav__item
+                    a.pagenav__link(href="#") 2
+                li.pagenav__item
+                    span ...
+                li.pagenav__item
+                    a.pagenav__link(href="#") 7
+                li.pagenav__item
+                    a.pagenav__arrow(href="#" aria-label="Next")
+                        svg.pagenav__icon(width="7" height="14")
+                            use(xlink:href="img/sprite.svg#arrow-right")
