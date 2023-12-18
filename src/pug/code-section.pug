@@ -1,0 +1,29 @@
+section.login-section
+    .container.login-section__container
+        .login-section__inner
+            form.form(id="code-form" autocomplete="off" novalidate="novalidate")
+                h1.section-title.form__title Введіть код
+
+                .form__group
+                    .form__info.form__info--big Код підтвердження надіслан вам на телефон
+
+                .form__group
+                    .form__code
+                        .form__code-item
+                            input#inputCode1.input.form__input(type="text" name="inputCode1" maxlength="1" autocomplete="off" required)
+
+                        .form__code-item
+                            input#inputCode2.input.form__input(type="text" name="inputCode2" maxlength="1" autocomplete="off" required)
+
+                        .form__code-item
+                            input#inputCode3.input.form__input(type="text" name="inputCode3" maxlength="1" autocomplete="off" required)
+
+                        .form__code-item
+                            input#inputCode4.input.form__input(type="text" name="inputCode4" maxlength="1" autocomplete="off" required)
+
+                .form__group
+                    .form__info Не отримали код? 
+                        a.blue-link(href="#" data-modal="login-modal") Відправити ще раз
+
+                .form__button-group
+                    button.button.form__button.form__button--middle Відправити
