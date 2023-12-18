@@ -51,7 +51,7 @@
     </nav>
     <ul class="actions">
       <li class="actions__item actions__item--hidden-md"><a class="button actions__button" href="#">Зареєструватися</a></li>
-      <li class="actions__item actions__item--hidden-md"><a class="button button--outline actions__button" href="#" data-modal="modal-login">Вхід</a></li>
+      <li class="actions__item actions__item--hidden-md"><a class="button button--outline actions__button" href="#">Вхід</a></li>
       <li class="actions__item actions__item--visible-md"><a class="button button--outline actions__button" href="#">
           <svg class="button__icon" width="17" height="19">
             <use xlink:href="img/sprite.svg#user"></use>
@@ -279,7 +279,7 @@
           <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Блог</a></li>
           <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">FAQ</a></li>
           <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти</a></li>
-          <li class="mobile-nav-menu__item"><a class="button mobile-nav-menu__button" href="#">Зареєструватися</a><a class="button button--outline mobile-nav-menu__button" href="#" data-modal="modal-login">Вхід</a></li>
+          <li class="mobile-nav-menu__item"><a class="button mobile-nav-menu__button" href="#">Зареєструватися</a><a class="button button--outline mobile-nav-menu__button" href="#">Вхід</a></li>
         </ul>
       </nav>
     </div>
@@ -304,39 +304,6 @@
           <h3 class="modal__title">Форма відправлена</h3>
           <p class="modal__descr">Наш менеджер зв’яжется с вами</p><a class="button modal__button" href="#">На головну</a>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="modal-login">
-    <div class="modal__inner">
-      <div class="modal__window">
-        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
-          <svg class="modal__close-icon" width="23" height="22">
-            <use xlink:href="img/sprite.svg#close-modal"></use>
-          </svg>
-        </button>
-        <form class="form" id="login-form" autocomplete="off" novalidate="novalidate">
-          <h3 class="section-title form__title">Вхід до кабінету</h3>
-          <div class="form__group">
-            <input class="input form__input phone-mask" id="inputLoginPhone" type="text" name="inputLoginPhone" placeholder="Номер телефона *" autocomplete="off" required="required"/>
-          </div>
-          <div class="form__group">
-            <input class="input form__input" id="inputLoginPassword" type="password" name="inputLoginPassword" placeholder="Пароль *" autocomplete="off" required="required"/>
-          </div>
-          <div class="form__group form__group--sb">
-            <div class="checkbox">
-              <input class="checkbox__input" id="checkboxKeep" type="checkbox" name="checkboxKeep" value="true"/>
-              <label class="checkbox__label" for="checkboxKeep">Бути у системі</label>
-            </div><a class="form__link blue-link" href="#">Забули пароль?</a>
-          </div>
-          <div class="form__group">
-            <picture class="form__recaptcha"><img class="form__recaptcha-img" src="img/recaptcha.webp" srcset="img/recaptcha@2x.webp 2x" loading="lazy" width="295" height="77" alt="alt"/></picture>
-          </div>
-          <div class="form__group form__group--center">
-            <button class="button form__button form__button--middle">Увійти</button>
-          </div>
-          <div class="form__info">Ще не маєте акаунту? <a class="blue-link" href="#" data-modal="login-modal">Зареєструватися</a></div>
-        </form>
       </div>
     </div>
   </div>

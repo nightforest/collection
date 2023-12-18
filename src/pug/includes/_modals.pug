@@ -13,39 +13,6 @@
                     p.modal__descr Наш менеджер зв’яжется с вами
                     a.button.modal__button(href="#") На головну
 
-    #modal-login.modal
-        .modal__inner
-            .modal__window
-                button.modal__close(aria-label="Close modal" data-modal-close type="button")
-                    svg.modal__close-icon(width="23" height="22")
-                        use(xlink:href="img/sprite.svg#close-modal")
-
-                form.form(id="login-form" autocomplete="off" novalidate="novalidate")
-                    h3.section-title.form__title Вхід до кабінету
-
-                    .form__group
-                        input#inputLoginPhone.input.form__input.phone-mask(type="text" name="inputLoginPhone" placeholder="Номер телефона *" autocomplete="off" required)
-                
-                    .form__group
-                        input#inputLoginPassword.input.form__input(type="password" name="inputLoginPassword" placeholder="Пароль *" autocomplete="off" required)
-
-                    .form__group.form__group--sb
-                        .checkbox
-                            input.checkbox__input#checkboxKeep(type="checkbox" name="checkboxKeep" value="true")
-                            label.checkbox__label(for="checkboxKeep") Бути у системі
-
-                        a.form__link.blue-link(href="#") Забули пароль?
-
-                    .form__group
-                        picture.form__recaptcha
-                            img.form__recaptcha-img(src="img/recaptcha.webp" srcset="img/recaptcha@2x.webp 2x" loading="lazy" width="295" height="77" alt="alt")
-
-                    .form__group.form__group--center
-                        button.button.form__button.form__button--middle Увійти
-
-                    .form__info Ще не маєте акаунту? 
-                        a.blue-link(href="#" data-modal="login-modal") Зареєструватися
-
     #modal-review.modal
         .modal__inner
             .modal__window

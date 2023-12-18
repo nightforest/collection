@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Title -->
-        <title>404 Page</title>
+        <title>Login Page</title>
         <!-- SEO Meta -->
         <meta name="description" content="Page description">
         <meta name="keywords" content="keyword">
@@ -70,15 +70,31 @@
         <!-- Main -->
         <main id="main" class="main">
             
-<section class="error-section">
-  <div class="container error-section__container">
-    <div class="error-section__left">
-      <div class="error-section__number">404</div>
-      <h1 class="error-section__title">Сторінку не знайдено</h1>
-      <div class="error-section__buttons"><a class="button error-section__button" href="#">На головну </a></div>
-    </div>
-    <div class="error-section__right">
-      <picture class="error-section__picture"><img class="error-section__img" src="img/404-img.svg" loading="lazy" width="417" height="377" alt="alt"/></picture>
+<section class="login-section">
+  <div class="container login-section__container">
+    <div class="login-section__inner">
+      <form class="form" id="login-form" autocomplete="off" novalidate="novalidate">
+        <h1 class="section-title form__title">Вхід до кабінету</h1>
+        <div class="form__group">
+          <input class="input form__input phone-mask" id="inputLoginPhone" type="text" name="inputLoginPhone" placeholder="Номер телефона *" autocomplete="off" required="required"/>
+        </div>
+        <div class="form__group">
+          <input class="input form__input" id="inputLoginPassword" type="password" name="inputLoginPassword" placeholder="Пароль *" autocomplete="off" required="required"/>
+        </div>
+        <div class="form__group form__group--sb">
+          <div class="checkbox">
+            <input class="checkbox__input" id="checkboxKeep" type="checkbox" name="checkboxKeep" value="true"/>
+            <label class="checkbox__label" for="checkboxKeep">Бути у системі</label>
+          </div><a class="form__link blue-link" href="#">Забули пароль?</a>
+        </div>
+        <div class="form__group">
+          <picture class="form__recaptcha"><img class="form__recaptcha-img" src="img/recaptcha.webp" srcset="img/recaptcha@2x.webp 2x" loading="lazy" width="295" height="77" alt="alt"/></picture>
+        </div>
+        <div class="form__group form__group--center">
+          <button class="button form__button form__button--middle">Увійти</button>
+        </div>
+        <div class="form__info">Ще не маєте акаунту? <a class="blue-link" href="#" data-modal="login-modal">Зареєструватися</a></div>
+      </form>
     </div>
   </div>
 </section>
