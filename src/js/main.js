@@ -14,6 +14,7 @@ import phoneMask from './includes/phoneMask.js';
 import forgotFormValidation from './includes/forgotFormValidation.js';
 import passwordFormValidation from './includes/passwordFormValidation.js';
 import codeFormValidation from './includes/codeFormValidation.js';
+import enterCode from './includes/enterCode.js';
 import '../sass/main.sass';
 
 
@@ -33,3 +34,4 @@ forgotFormValidation();
 loginFormValidation();
 passwordFormValidation();
 codeFormValidation();
+enterCode();
