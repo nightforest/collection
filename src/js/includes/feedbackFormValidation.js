@@ -37,6 +37,10 @@ const feedbackFormValidation = () => {
                     errorMessage: "Заповніть це поле",
                 },
             ]);
+        
+        validator.onSuccess((event) => {
+            event.currentTarget.submit();
+        });
     }
 }
 
