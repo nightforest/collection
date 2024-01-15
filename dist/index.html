@@ -29,8 +29,8 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-      <script type="module" crossorigin src="/assets/main-996df6ba.js"></script>
-      <link rel="stylesheet" href="/assets/main-57a21764.css">
+      <script type="module" crossorigin src="/assets/main-27519b4f.js"></script>
+      <link rel="stylesheet" href="/assets/main-55f67df5.css">
     </head>
     <body>
         <!-- Header -->
@@ -444,25 +444,81 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="swiper-pagination tariffs-slider__pagination"></div>
-    </div>
-    <div class="tariff-max">
-      <div class="tariff-max__col tariff-max__col--5">
-        <h3 class="tariff-max__title">Незабаром вийде тариф MAX</h3>
-        <p class="tariff-max__descr">Вам знайома ситуація, коли Ви шукаєте те, що колись читали, серед тисяч скріншотів різних юридичних ресурсів?</p>
-      </div>
-      <div class="tariff-max__col tariff-max__col--4">
-        <div class="tariff-max__info">Ми вже працюємо над базой кримінального законодавства</div>
-        <div class="tariff-max__total">
-          <div class="tariff-max__price">Вартість 8$</div>
-          <div class="tariff-max__discount">43$ / 6 мес (-10%)</div>
-          <div class="tariff-max__discount">76$ / 12 мес (-22%)</div>
+        <div class="swiper-slide tariffs-slider__slide">
+          <div class="tariff-card">
+            <div class="tariff-card__body">
+              <h3 class="tariff-card__title">Тариф BASE</h3>
+              <ul class="tariff-card__list">
+                <li class="tariff-card__item"><strong>Інтелектуальний пошук</strong>
+                  <div class="tariff-card__status tariff-card__status--green">
+                    <svg class="tariff-card__status-icon" width="15" height="11">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="tariff-card__item"><strong>Доступна база правових позицій</strong>
+                  <div class="tariff-card__status tariff-card__status--green">
+                    <svg class="tariff-card__status-icon" width="15" height="11">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="tariff-card__item"><strong>Можливість скачувати сторінку кнопкою export</strong>
+                  <div class="tariff-card__status tariff-card__status--green">
+                    <svg class="tariff-card__status-icon" width="15" height="11">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="tariff-card__item"><strong>Можливість створювати закладки по рішенням в особистому кабінеті</strong>
+                  <div class="tariff-card__status tariff-card__status--green">
+                    <svg class="tariff-card__status-icon" width="15" height="11">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="tariff-card__item"><strong>Можливість відмічати жовтим кольором потрібне</strong>
+                  <div class="tariff-card__status tariff-card__status--green">
+                    <svg class="tariff-card__status-icon" width="15" height="11">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="tariff-card__item"><strong>Можливість самостійно створювати свої особисті сторінки з рішеннями, просвоювати імена рішенням з прив’язкою до посилання і т.п.</strong>
+                  <div class="tariff-card__status tariff-card__status--green">
+                    <svg class="tariff-card__status-icon" width="15" height="11">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="tariff-card__item"><strong>Можливість копіювати сторінку</strong>
+                  <div class="tariff-card__status tariff-card__status--green">
+                    <svg class="tariff-card__status-icon" width="15" height="11">
+                      <use xlink:href="img/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+              <div class="tariff-card__buttons">
+                <button class="button button--outline tariff-card__button" type="button">1 день безкоштовне демо</button>
+                <button class="play-button" type="button" data-modal="modal-video"><span class="play-button__pic">
+                    <svg class="play-button__icon" width="11" height="14">
+                      <use xlink:href="img/sprite.svg#play"></use>
+                    </svg></span>Як це працює?</button>
+              </div>
+            </div>
+            <div class="tariff-card__footer">
+              <div class="tariff-card__total">
+                <div class="tariff-card__price">Вартість 7$</div>
+                <div class="tariff-card__discount">37$ / 6 мес (-10%)</div>
+                <div class="tariff-card__discount">65$ / 12 мес (-25%)</div>
+              </div>
+              <button class="button tariff-card__buy-button" type="button">Обрати</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="tariff-max__col tariff-max__col--3">
-        <picture class="tariff-max__picture"><img class="tariff-max__img" src="img/tariff-img.webp" srcset="img/tariff-img@2x.webp 2x" loading="lazy" width="231" height="140" alt="alt"/></picture>
-      </div>
+      <div class="swiper-pagination tariffs-slider__pagination"></div>
     </div>
   </div>
 </section>
