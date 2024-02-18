@@ -20,11 +20,9 @@ const tariffsSlider = () => {
         breakpoints: {
             0: {
                 slidesPerView: 1,
-                spaceBetween: 15,
             },
             992: {
                 slidesPerView: 2,
-                spaceBetween: 30,
             },
         },
     });

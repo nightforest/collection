@@ -1,0 +1,29 @@
+section.login-section
+    .container.login-section__container
+        .login-section__inner
+            form.form.login-section__form(id="sign-in-form" autocomplete="off" novalidate="novalidate")
+                h1.section-title.form__title.section-title.form__title--mb-15 Вхід
+
+                .form__group
+                    .form__info за допомогою сервісів
+
+                .form__row
+                    .form__col
+                        a.button.button--big(href="#")
+                            svg.button__icon(width="37" height="38")
+                                use(xlink:href="img/sprite.svg#google")
+                            | Google
+                    
+                    .form__col
+                        a.button.button--big(href="#")
+                            svg.button__icon(width="30" height="38")
+                                use(xlink:href="img/sprite.svg#apple")
+                            | Apple
+                
+                .form__group
+                    .form__info Я прочитав і погоджуюся з 
+                        a.blue-link(href="#") Політикою конфіденційності
+                
+                .form__group
+                    .form__info Я прочитав і погоджуюся з 
+                        a.blue-link(href="#") Публічна оферта
